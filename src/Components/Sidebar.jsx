@@ -1,18 +1,17 @@
-import React from 'react'
 import '../Style.css'
 import '../Custom.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logo from '../assets/logo.svg'
 import logo_mini from '../assets/logo-mini.svg'
 import dp from '../assets/face28.jpg'
-import { faCheckSquare, faCoffee,faBars } from '@fortawesome/fontawesome-free-solid'
+import { faBars } from '@fortawesome/fontawesome-free-solid'
 import { useState } from 'react'
 function Sidebar() {
-    const [toggle, settoggle] = useState(false)
+    const [toggle, settoggle] = useState(true)
 
-    const [toggleProfile, settoggleProfile] = useState(false)
+    const [toggleProfile, settoggleProfile] = useState(true)
 
-    const [toggleNotification, settoggleNotification] = useState(false)
+    const [toggleNotification, settoggleNotification] = useState(true)
     const [image, setimage] = useState(true)
 
     function handleToggle(){
@@ -25,7 +24,6 @@ function Sidebar() {
         else{
             document.getElementById("navbody").className="container-scroller sidebar-icon-only"
             setimage(()=>{setimage(true)})
-            console.log(image)
 
 
 
@@ -67,7 +65,7 @@ function handleProfile(){
     // <div data-new-gr-c-s-check-loaded="14.1159.0" data-gr-ext-installed=""  className="sidebar-icon-only">
     <div id="navbody" className="container-scroller sidebar-icon-only">
 
-    <nav className="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+    <nav className="navbar  col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div className="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
      <a className="navbar-brand brand-logo mr-5" href="#"><img src={logo} className="mr-2" alt="logo"/></a>
         <a className="navbar-brand brand-logo-mini" href="#"><img src={logo_mini} alt="logo"/></a>
@@ -226,6 +224,9 @@ function handleProfile(){
 
       </div>
     </nav>
+    <br></br>
+    <br></br>
+    
     <nav  className="no-outline sidebar sidebar-offcanvas " id="sidebar">
 
 
@@ -237,10 +238,10 @@ function handleProfile(){
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i className="icon-layout menu-icon"></i>
+            <a className="nav-link"  href="#ui-basic" >
+              <i className="mdi mdi-view-dashboard"></i>
               <span className="menu-title">UI Elements</span>
-              <i className="menu-arrow"></i>
+              <i className="mdi mdi-view-dashboard"></i>
             </a>
             <div className="collapse" id="ui-basic">
               <ul className="nav flex-column sub-menu">

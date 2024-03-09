@@ -1,22 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Signin from './Components/Signin'
 import Sidebar from './Components/Sidebar'
-import Login from './Components/Login'
+
+import Signup from './Components/Signup'
+
+import Page1 from './Components/Page1'
+
+import EmailVerification from './Components/EmailVerification'
+import {
+  BrowserRouter, Routes, Route,
+} from 'react-router-dom';
 
 function App() {
 
 
   return (
     <>
+    <BrowserRouter>
 
-          <div >
-            <Sidebar/>
-          </div>
-          <div>
-            <Login/>
-          </div>
+      <Routes>
+        <Route path='/' element={<Page1/>}/>
+        <Route path='/Signin' element={<Signin/>}/>
+
+        <Route path='/Signup' element={<Signup/>}/>
+
+        <Route path='/EmailVerification' element={<EmailVerification/>}/>
+        <Route path='/Dashboard' element={<Sidebar/>}/>
+
+       
+      </Routes>
+      
+    </BrowserRouter>
+   
+
+       
         
 
     </>

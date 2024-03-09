@@ -39,3 +39,36 @@
 }
 
    */
+.checkbox {
+  opacity: 1 !important;
+  border-color: #4b49ac !important;
+  height: 80%;
+  width: 13%;
+  border-width: 2px !important;
+  margin-right: 100% !important;
+}
+input:checked {
+  background-color: #4b49ac !important;
+}
+hr {
+  background-color: black;
+  border-width: 200%;
+}
+.shadow {
+  box-shadow: 20px;
+}
+.dflex {
+  display: flex;
+}
+.text_center {
+  text-align: start;
+}
+.text_end {
+  text-align: end;
+}
+.recieve_code {
+  width: 45%;
+}
+.otp_width {
+  width: 20%;
+}
