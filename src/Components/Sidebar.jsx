@@ -6,7 +6,7 @@ import logo_mini from '../assets/logo-mini.svg'
 import dp from '../assets/face28.jpg'
 import { faBars } from '@fortawesome/fontawesome-free-solid'
 import { useState } from 'react'
-function Sidebar() {
+function Sidebar({Component}) {
     const [toggle, settoggle] = useState(true)
 
     const [toggleProfile, settoggleProfile] = useState(true)
@@ -63,7 +63,8 @@ function handleProfile(){
 }
   return (
     // <div data-new-gr-c-s-check-loaded="14.1159.0" data-gr-ext-installed=""  className="sidebar-icon-only">
-    <div id="navbody" className="container-scroller sidebar-icon-only">
+    
+    <div id="navbody" className="container-scroller  sidebar-icon-only ">
 
     <nav className="navbar  col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div className="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
@@ -224,26 +225,25 @@ function handleProfile(){
 
       </div>
     </nav>
+
     <br></br>
     <br></br>
-    
-    <nav  className="no-outline sidebar sidebar-offcanvas " id="sidebar">
-
-
+    <div className="d-flex main-page">
+    <nav className="sidebar sidebar-offcanvas" id="sidebar">
         <ul className="nav">
           <li className="nav-item">
-            <a className="nav-link" href="index.html">
+            <a className="nav-link" href="Dashboard">
               <i className="icon-grid menu-icon"></i>
               <span className="menu-title">Dashboard</span>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link"  href="#ui-basic" >
-              <i className="mdi mdi-view-dashboard"></i>
+            <a className="nav-link " data-toggle="collapse" href="#ui-basic" aria-expanded="true" aria-controls="ui-basic">
+              <i className="icon-layout menu-icon"></i>
               <span className="menu-title">UI Elements</span>
-              <i className="mdi mdi-view-dashboard"></i>
+              <i className="menu-arrow"></i>
             </a>
-            <div className="collapse" id="ui-basic">
+            <div className="collapse " id="ui">
               <ul className="nav flex-column sub-menu">
                 <li className="nav-item"> <a className="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
                 <li className="nav-item"> <a className="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
@@ -252,7 +252,7 @@ function handleProfile(){
             </div>
           </li>
           <li className="nav-item">
-            <a className="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+            <a className="nav-link" data-toggle="collapse" href="form" aria-expanded="false" aria-controls="form-elements">
               <i className="icon-columns menu-icon"></i>
               <span className="menu-title">Form elements</span>
               <i className="menu-arrow"></i>
@@ -276,7 +276,7 @@ function handleProfile(){
             </div>
           </li>
           <li className="nav-item">
-            <a className="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+            <a className="nav-link" data-toggle="collapse" href="Tables" aria-expanded="false" aria-controls="tables">
               <i className="icon-grid-2 menu-icon"></i>
               <span className="menu-title">Tables</span>
               <i className="menu-arrow"></i>
@@ -332,9 +332,18 @@ function handleProfile(){
             </a>
           </li>
         </ul>
+
       </nav>
+{Component}
       </div>
-    //   </div>
+      <footer className="footer">
+          <div className="d-sm-flex justify-content-center justify-content-sm-between">
+            <span className="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2021.  Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash. All rights reserved.</span>
+            <span className="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i className="ti-heart text-danger ml-1"></i></span>
+          </div>
+        </footer>
+      </div>
+  
     )
 }
 

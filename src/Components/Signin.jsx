@@ -47,7 +47,7 @@ function Signin() {
                   </button>
                 </div>
                 <div className="text-center mt-4 font-weight-light">
-                  Don&apos;t have an account? <a href="register.html" className="text-primary">Create</a>
+                  Don&apos;t have an account? <Link to="/Signup" className="text-primary">Create</Link>
                 </div>
               </form>
             </div>

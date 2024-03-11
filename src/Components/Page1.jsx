@@ -40,7 +40,7 @@ function Page1() {
                   </Link>
                 </div>
                 <div className="text-center mt-4 font-weight-light">
-                  Already have an account? <Link to="/Signin" className="text-primary">Signin</Link>
+                  Already have an account? <Link to="Signin" className="text-primary">Signin</Link>
                 </div>
               </form>
             </div>

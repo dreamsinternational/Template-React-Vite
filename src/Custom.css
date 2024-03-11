@@ -47,6 +47,10 @@
   border-width: 2px !important;
   margin-right: 100% !important;
 }
+.radio-check {
+  opacity: 1 !important;
+  border-color: #4b49ac !important;
+}
 input:checked {
   background-color: #4b49ac !important;
 }
@@ -71,4 +75,15 @@ hr {
 }
 .otp_width {
   width: 20%;
+}
+.Z {
+  z-index: 999;
+}
+.main-page {
+  width: 100%;
+}
+
+/* the template had inline style width 100%  */
+.width-100 {
+  width: 100%;
 }
