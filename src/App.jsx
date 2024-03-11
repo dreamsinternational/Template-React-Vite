@@ -15,6 +15,7 @@ import {
 import Dashboard from './Components/Dashboard'
 // import Donate from './Components/Donate'
 import Table from './Components/Table'
+import Icons from './Components/Icons'
 // import ShowNavbar from './Components/ShowNavbar'
 
 function App() {
@@ -39,6 +40,8 @@ function App() {
         <Route path='/form' element={<Sidebar Component={<Forms/>}/>}/>
 
         <Route path='/Tables' element={<Sidebar Component={<Table/>}/>}/>
+
+        <Route path='/Icons' element={<Sidebar Component={<Icons/>}/>}/>
 
         
 
