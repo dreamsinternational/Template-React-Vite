@@ -16,17 +16,17 @@ function Page1() {
                 
                 <div className="mb-2 ">
                   <button type="button" className="btn btn-block btn-google  auth-form-btn">
-                    <i className="ti-facebook mr-2"></i>Sign Up with Google
+                    <i className="mdi mdi-google mr-2"></i>Sign Up with Google
                   </button>
                 </div>
                 <div className="mb-2">
                   <button type="button" className="btn btn-block btn-facebook   auth-form-btn">
-                    <i className="ti-facebook mr-2"></i>Sign Up with facebook
+                    <i className="mdi mdi-facebook mr-2"></i>Sign Up with facebook
                   </button>
                 </div>
                 <div className="mb-2">
                   <button type="button" className="btn btn-block btn-dark  auth-form-btn">
-                    <i className="ti-facebook mr-2"></i>Sign Up with Apple
+                    <i className="mdi mdi-apple mr-2"></i>Sign Up with Apple
                   </button>
                 </div>
                 <div style={{textAlign:"center"}} className="mb-2">
@@ -36,7 +36,7 @@ function Page1() {
                 </div>
                 <div className="mb-2">
                   <Link to="/Signup" type="button" className="btn btn-block btn-primary  auth-form-btn">
-                    <i className="ti-facebook mr-2"></i>Sign Up with Email
+                    <i className="mdi mdi-email-outline mr-2"></i>Sign Up with Email
                   </Link>
                 </div>
                 <div className="text-center mt-4 font-weight-light">

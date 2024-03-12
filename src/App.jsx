@@ -17,15 +17,20 @@ import Dashboard from './Components/Dashboard'
 import Table from './Components/Table'
 import Icons from './Components/Icons'
 // import ShowNavbar from './Components/ShowNavbar'
-
+import { useState } from 'react'
+import ShowSidebar from './Components/ShowSidebar'
 function App() {
-
+const [sidebarActive, setSidebarActive] = useState(false);
 
   return (
-    <>
+    <div className={`${sidebarActive?"d-flex":""}`}>
     
     <BrowserRouter>
-
+    <div>
+    <ShowSidebar setSidebarActive={setSidebarActive} >
+  {<Sidebar />}
+  </ShowSidebar>
+  </div>
    
 
 
@@ -36,12 +41,18 @@ function App() {
         <Route path='/Signup' element={<Signup/>}/>
 
         <Route path='/EmailVerification' element={<EmailVerification/>}/>
-        <Route path='/Dashboard' element={<Sidebar Component={<Dashboard/>}/>}/>
-        <Route path='/form' element={<Sidebar Component={<Forms/>}/>}/>
+        <Route path='/Dashboard' element={<Dashboard/>}/>
+
+        <Route path='/form' element={<Forms/>}/>
+
+        <Route path='/Tables' element={<Table/>}/>
+
+        <Route path='/Icons' element={<Icons/>}/>
+        {/* <Route path='/form' element={<Sidebar Component={<Forms/>}/>}/>
 
         <Route path='/Tables' element={<Sidebar Component={<Table/>}/>}/>
 
-        <Route path='/Icons' element={<Sidebar Component={<Icons/>}/>}/>
+        <Route path='/Icons' element={<Sidebar Component={<Icons/>}/>}/> */}
 
         
 
@@ -54,7 +65,7 @@ function App() {
     {/* <Donate/>     */}
     
 
-    </>
+    </div>
   )
 }
 

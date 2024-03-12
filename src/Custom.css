@@ -62,7 +62,7 @@ hr {
   box-shadow: 20px;
 }
 .dflex {
-  display: flex;
+  display: inline-flex;
 }
 .text_center {
   text-align: start;
@@ -87,3 +87,23 @@ hr {
 .width-100 {
   width: 100%;
 }
+
+.none_settings {
+  border: none !important;
+}
+
+@media (max-width: 767.98px) {
+  .table-responsive-md {
+    display: block;
+    width: 200%;
+    overflow-x: visible !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  .table-responsive-md .table-bordered {
+    border: 0;
+  }
+}
+/* .nav-link:focus{
+  background-color: #4b49ac !important;
+  color: #fff !important;
+} */
