@@ -122,7 +122,7 @@ function handleProfile(){
                 <FontAwesomeIcon  icon="fa fa-search" aria-hidden="true"/>
                 </span>
               </div>
-              <input type="text" className="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search"/>
+              <input type="text" className="form-control ml-3 mb-1" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search"/>
             </div>
           </li>
         </ul>
@@ -300,19 +300,15 @@ function handleProfile(){
               </ul>
             </div>
           </li>
-          <li className="nav-item act">
-            <a className="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
-              <i className="mdi mdi-block-helper mr-3 ml-3"></i>
-              <span className="menu-title">Error pages</span>
+          <li  className={`nav-item  `}>
+            <a  className="nav-link" data-toggle="collapse" href="/Error" aria-expanded="false" aria-controls="auth">
+            <i className="mdi mdi-block-helper mr-3 ml-3"></i>
+              <span className="menu-title">User Pages</span>
               {/* <i className="menu-arrow"></i> */}
             </a>
-            <div className="collapse" id="error">
-              <ul className="nav flex-column sub-menu">
-                <li className="nav-item"> <a className="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
-                <li className="nav-item"> <a className="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
-              </ul>
-            </div>
+           
           </li>
+          
           
         </ul>
 

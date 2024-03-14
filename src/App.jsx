@@ -19,6 +19,7 @@ import Icons from './Components/Icons'
 // import ShowNavbar from './Components/ShowNavbar'
 import { useState } from 'react'
 import ShowSidebar from './Components/ShowSidebar'
+import Error from './Components/Error'
 function App() {
 const [sidebarActive, setSidebarActive] = useState(false);
 
@@ -48,6 +49,8 @@ const [sidebarActive, setSidebarActive] = useState(false);
         <Route path='/Tables' element={<Table/>}/>
 
         <Route path='/Icons' element={<Icons/>}/>
+
+        <Route path='/Error' element={<Error/>}/>
         {/* <Route path='/form' element={<Sidebar Component={<Forms/>}/>}/>
 
         <Route path='/Tables' element={<Sidebar Component={<Table/>}/>}/>

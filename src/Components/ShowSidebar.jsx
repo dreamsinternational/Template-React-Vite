@@ -6,7 +6,7 @@ export default function ShowSidebar({children,setSidebarActive}) {
     const [ShowSidebar,setShowSidebar]=useState(false)
     useEffect(() => {
       
-        if(location.pathname==="/" || location.pathname==="/Signin" || location.pathname==="/Signup" || location.pathname==="/EmailVerification"){
+        if(location.pathname==="/" || location.pathname==="/Signin" || location.pathname==="/Signup" || location.pathname==="/EmailVerification" || location.pathname==="/Error"){
             setShowSidebar(false)
         }
         else{

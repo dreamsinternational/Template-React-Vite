@@ -1,5 +1,6 @@
 import logo from '../assets/logo.svg'
 import { Link } from 'react-router-dom'
+import "../Style.css"
 function Page1() {
   return (
     <div className="container-scroller ">
